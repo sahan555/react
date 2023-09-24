@@ -9,8 +9,16 @@ function ChildComponent(props) {
   return (
     <div>
       <h2>Child Component</h2>
-      <p>Name: {person.name}</p>
+      {person ?(
+        <>
+         <p>Name: {person.name}</p>
       <p>Age: {person.age}</p>
+        </>
+      ):(
+        <>
+        <p>no data found</p>
+        </>
+      )}
     </div>
   );
 }
