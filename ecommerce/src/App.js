@@ -6,6 +6,11 @@ import FatherComponent from "./component/FatherComponent";
 import Counter from "./counter";
 import CounterClass from "./counterClass";
 import NavbarComponent from "./component/frontend/NavbarComponent";
+import HomeComponent from "./component/frontend/HomeComponent";
+import AboutComponent from "./component/frontend/AboutComponent";
+import ProductComponent from "./component/frontend/ProductComponent";
+import RegisterComponent from "./component/frontend/RegisterComponent";
+import LoginComponent from "./component/frontend/LoginComponent";
 function App() {
   return (
     <Router>
@@ -15,6 +20,11 @@ function App() {
         <Route path="/father" element={<FatherComponent />} />
         <Route path="/counter" element={<Counter />} />
         <Route path="/counterclass" element={<CounterClass />} />
+        <Route path="/" element={<HomeComponent />} />
+        <Route path="/about" element={<AboutComponent />} />
+        <Route path="/products" element={<ProductComponent />} />
+        <Route path="/register" element={<RegisterComponent />} />
+        <Route path="/login" element={<LoginComponent />} />
       </Routes>
       {/* <footer/> */}
     </Router>
