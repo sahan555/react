@@ -8,9 +8,12 @@ import CounterClass from "./counterClass";
 import NavbarComponent from "./component/frontend/NavbarComponent";
 import HomeComponent from "./component/frontend/HomeComponent";
 import AboutComponent from "./component/frontend/AboutComponent";
-import ProductComponent from "./component/frontend/ProductComponent";
-import RegisterComponent from "./component/frontend/RegisterComponent";
+
 import LoginComponent from "./component/frontend/LoginComponent";
+import RegisterComponent from "./component/frontend/RegisterComponent";
+
+import ProductComponent from "./component/frontend/ProductComponent";
+import AddProductComponent from "./component/frontend/product/AddProductComponent";
 function App() {
   return (
     <Router>
@@ -23,6 +26,7 @@ function App() {
         <Route path="/" element={<HomeComponent />} />
         <Route path="/about" element={<AboutComponent />} />
         <Route path="/products" element={<ProductComponent />} />
+        <Route path="/products/create" element={<AddProductComponent />} />
         <Route path="/register" element={<RegisterComponent />} />
         <Route path="/login" element={<LoginComponent />} />
       </Routes>
