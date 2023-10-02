@@ -3,10 +3,10 @@ import {Link} from "react-router-dom";
 function NavbarComponent() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Talkie
+            <img src="/assets/images/logo.png" alt=""/>
           </Link>
           <button
             className="navbar-toggler"
@@ -26,11 +26,11 @@ function NavbarComponent() {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/">
                   Register
                 </Link>
-              </li>
+              </li> */}
             
             </ul>
             <form className="d-flex" role="search">
