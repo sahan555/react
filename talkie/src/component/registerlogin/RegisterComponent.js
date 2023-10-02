@@ -30,14 +30,15 @@ function RegisterComponent() {
       <section className="register-page">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
-              <h1>
-                Connecting Hearts, One Click at a Time: Your Social Journey
-                Begins Here!
-              </h1>
-              <div className="video-wrapper">
-              <video src="/assets/videos/video.mp4" muted autoplay loop></video>
-
+              <div className="col-md-6">
+            <div className="position-relative">
+                <h1>
+                  Connecting Hearts, One Click at a Time: Your Social Journey
+                  Begins Here!
+                </h1>
+                <div className="background-wrapper">
+                  <img src="/assets/images/premium.avif" alt="" />
+                </div>
               </div>
             </div>
             <div className="col-md-6">

@@ -11,6 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+img{
+  width: 100%;
+}
 .navbar {
   box-shadow: 0px 2px 10px 0 rgb(0 0 0 / 20%);
 }
@@ -27,4 +30,12 @@ width: 100%;
 }
 .register-page h1{
   font-weight: 400;
+}
+.register-page .background-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }

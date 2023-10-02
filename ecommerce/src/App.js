@@ -14,6 +14,7 @@ import RegisterComponent from "./component/frontend/RegisterComponent";
 
 import ProductComponent from "./component/frontend/ProductComponent";
 import AddProductComponent from "./component/frontend/product/AddProductComponent";
+import ProductViewComponent from "./component/frontend/product/ViewProductComponent";
 function App() {
   return (
     <Router>
@@ -29,6 +30,7 @@ function App() {
         <Route path="/products/create" element={<AddProductComponent />} />
         <Route path="/register" element={<RegisterComponent />} />
         <Route path="/login" element={<LoginComponent />} />
+        <Route path="/product/view" element={<ProductViewComponent />} />
       </Routes>
       {/* <footer/> */}
     </Router>

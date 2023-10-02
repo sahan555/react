@@ -7,7 +7,7 @@ function ProductComponent() {
    <div>
     <ul>
       <li><Link to="/products/create">Create</Link></li>
-      <li><Link to=""></Link></li>
+      <li><Link to="/product/view">View</Link></li>
       <li><Link to=""></Link></li>
     </ul>
    </div>
