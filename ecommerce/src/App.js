@@ -15,6 +15,7 @@ import RegisterComponent from "./component/frontend/RegisterComponent";
 import ProductComponent from "./component/frontend/ProductComponent";
 import AddProductComponent from "./component/frontend/product/AddProductComponent";
 import ProductViewComponent from "./component/frontend/product/ViewProductComponent";
+import EditProductComponent from "./component/frontend/product/EditProductComponent";
 function App() {
   return (
     <Router>
@@ -31,6 +32,7 @@ function App() {
         <Route path="/register" element={<RegisterComponent />} />
         <Route path="/login" element={<LoginComponent />} />
         <Route path="/product/view" element={<ProductViewComponent />} />
+        <Route path="/product/edit/:id" element={<EditProductComponent />} />
       </Routes>
       {/* <footer/> */}
     </Router>

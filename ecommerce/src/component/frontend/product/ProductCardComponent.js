@@ -69,7 +69,7 @@ function ProductCardComponent({
               ) : (
                 <>
                   {/* If user is logged in and isAdmin is true, show "Edit" and "Delete" buttons */}
-                  <Link className="btn btn-primary" to={`/editProduct/${_id}`}>
+                  <Link className="btn btn-primary" to={`/product/edit/${_id}`}>
                     Edit
                   </Link>
                   <Link className="btn btn-danger" onClick={deleteProduct}>

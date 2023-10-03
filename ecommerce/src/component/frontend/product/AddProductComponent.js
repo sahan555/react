@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect,useState } from "react";
 // import '../../assets/css/productview.css'
 
 function AddProductComponent() {
@@ -9,6 +9,20 @@ function AddProductComponent() {
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
   const [image, setImage] = useState("");
+
+  //   useEffect(() => {
+  //   axios
+  //     .get("http://localhost:5000/category/get")
+  //     .then((response) => {
+  //       console.log(response);
+  //       // console.log(response.data);
+  //       // console.log(response.data.products);
+  //       setCategory(response.data.category);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
