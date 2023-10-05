@@ -16,6 +16,7 @@ import ProductComponent from "./component/frontend/ProductComponent";
 import AddProductComponent from "./component/frontend/product/AddProductComponent";
 import ProductViewComponent from "./component/frontend/product/ViewProductComponent";
 import EditProductComponent from "./component/frontend/product/EditProductComponent";
+import SearchResultsPage from "./component/frontend/SearchResultComponent";
 function App() {
   return (
     <Router>
@@ -33,6 +34,8 @@ function App() {
         <Route path="/login" element={<LoginComponent />} />
         <Route path="/product/view" element={<ProductViewComponent />} />
         <Route path="/product/edit/:id" element={<EditProductComponent />} />
+        <Route path="/product/search/:search" element={<SearchResultsPage />} />
+
       </Routes>
       {/* <footer/> */}
     </Router>

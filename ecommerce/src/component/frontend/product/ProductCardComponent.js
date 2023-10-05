@@ -25,7 +25,7 @@ function ProductCardComponent({
 
   const deleteProduct = () => {
     axios
-      .delete(`http://localhost:5000/deleteProduct/${_id}`, {
+      .delete(`http://localhost:5000/Product/delete/${_id}`, {
         headers: {
           Authorization: `Bearer ${tokens}`,
         },

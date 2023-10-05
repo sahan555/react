@@ -138,7 +138,6 @@ const EditProductComponent = () => {
           onChange={handleChange}
         >
           {categoryname.map((category) => (
-           
             <option value={category._id}>{category.name}</option>
           ))}
         </select>

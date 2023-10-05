@@ -1,10 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+
 
 function LoginComponent() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [profile, setProfile] = useState();
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/user/profile/get")
+      .then((response) => {
+        console.log(response);
+        // console.log(response.data);
+        // console.log(response.data.products);
+        setProfile(response.data.profile);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+console.log(profile)
+
+
+
   const handleSubmit = (e) => {
     // Prevent the default behaviour of form submit
     e.preventDefault();
@@ -26,7 +46,15 @@ function LoginComponent() {
 
           // Redirect to login after 1 seconds
           console.log(response.data.token);
-            window.location.href = "/profile";
+          
+
+          {!profile? (
+            window.location.href = "/profile"
+          ) : (
+            window.location.href="/"
+          )}
+
+            
         }, 1000);
       })
       .catch((err) => {
